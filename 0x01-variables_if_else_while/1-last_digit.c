@@ -14,10 +14,10 @@
 int main(void)
 {
 	int n;
-	int last_n = n % 10;
 	char statement[50];
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	int last_n = n % 10;
 	/* your code goes there */
 	if (n > 5)
 		strcat(statement, " greater than 5");
