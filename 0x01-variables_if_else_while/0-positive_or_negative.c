@@ -5,7 +5,7 @@
 /**
  * main - Entry point
  *
- * Description : 'printing whether random number is negative positive or zer' 
+ * Description : 'printing whether random number is negative positive or zer'
  *
  * Return: Always 0 (success)
  */
