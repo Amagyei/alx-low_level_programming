@@ -10,10 +10,11 @@
  */
 
 int main(void) {
-	const char *ch = "abcdefghijklmnopqrstuvwxyz";
+	char letter = 'a';
 
-	for (int i = 0; ch[i] != '\0'; i++) {
-		putchar(ch[i]);
+	while (letter <= 'z'){
+		putchar(letter);
+		letter++;
 	}
 
 	putchar('\n');
