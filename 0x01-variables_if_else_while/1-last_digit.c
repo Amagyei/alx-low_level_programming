@@ -32,4 +32,5 @@ int main(void)
 		strcat(statement, " less than 6 and not 0");
 	printf("Last digit of %d is %d and is%s\n", n, last_n, statement);
 	return (0);
+	/* Description */
 }
