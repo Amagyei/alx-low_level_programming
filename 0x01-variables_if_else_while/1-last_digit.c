@@ -5,12 +5,13 @@
 #include <time.h>
 /* more headers goes there */
 
-/* 
- * int main - my code is in here
+/*
+ * main - my code is in here
  *
- * description -it does something
+ * Description: it generates an integer and checks things
+ * -it does something
  *
- * return - 0 (success)
+ * Return: 0 (Success)
  *
  */
 int main(void)
@@ -18,6 +19,7 @@ int main(void)
 	int n;
 	char statement[50] = "";
 	int last_n = 0;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last_n = n % 10;
