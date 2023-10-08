@@ -9,15 +9,19 @@
  *
  */
 
-int main(void) {
+int main(void)
+{
+	/* initializing the variable*/
 	char letter = 'a';
 
-	while (letter <= 'z'){
+	while (letter <= 'z')
+	{
 		putchar(letter);
 		letter++;
 	}
 
 	putchar('\n');
 
-	return 0;
+	return (0);
+
 }
