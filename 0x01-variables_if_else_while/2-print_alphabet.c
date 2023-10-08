@@ -3,7 +3,7 @@
 /**
  * main - the main function
  *
- * Description : 'the code is supposed to print all the letters of the alphabet'
+ * Description : 'the code is to print all the letters of the alphabet'
  *
  * Return: Always 0 (success)
  *
