@@ -14,9 +14,9 @@ int main(void)
 
 	do {
 		putchar(letter);
-		letter++;
 		if (letter == 'z')
 			letter = 'A';
+		letter++;
 	} while
 		(letter != 'Z');
 	putchar('Z');
