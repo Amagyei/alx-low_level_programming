@@ -8,8 +8,7 @@
 /*
  * main - my code is in here
  *
- * Description : 'it generates an integer and checks things'
- *
+ * description : 'it generates an integer and checks things'
  *
  * Return: 0 (success)
  *
