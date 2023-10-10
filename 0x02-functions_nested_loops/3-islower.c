@@ -1,4 +1,6 @@
 #include "main.h"
+#include <ctype.h>
+
 /**
  * print_alphabet_x10 - program that print alphabet lowercase
  *
