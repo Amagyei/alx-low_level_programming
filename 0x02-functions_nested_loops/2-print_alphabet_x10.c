@@ -1,12 +1,12 @@
 #include "main.h"
-/*
- * main - my code is in here
+/**
+ * main - entry point
  *
- * Description : 'it generates an integer and checks things'
+ * Description : 'Code to print tht alphabet'
  *
- * Return: 0 (success)
- *
+ * Return: Always 0 (success)
  */
+
 void print_alphabet_x10(void)
 {
 int i;
