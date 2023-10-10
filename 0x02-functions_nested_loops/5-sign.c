@@ -12,9 +12,6 @@
 
 int print_sign(int n)
 {
-int a = 1;
-int b = 0;
-int c = -1;
 if (n > 0)
 {
 if (n > 0)
@@ -31,5 +28,6 @@ else
 {
 _putchar('-');
 }
-return (-1);}
+return (-1);
+}
 }
