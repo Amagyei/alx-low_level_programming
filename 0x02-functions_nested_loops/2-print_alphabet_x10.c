@@ -1,12 +1,12 @@
 #include "main.h"
-/**
- * print_alphabet - function that print alphabets in lower case
+/*
+ * main - my code is in here
  *
- * Description : function iterates a loop that prints a to z
+ * Description : 'it generates an integer and checks things'
  *
- * Return: always 0;
+ * Return: 0 (success)
+ *
  */
-
 void print_alphabet_x10(void)
 {
 int i;
