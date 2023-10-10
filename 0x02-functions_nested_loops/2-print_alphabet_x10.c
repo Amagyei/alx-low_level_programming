@@ -15,10 +15,10 @@ for (i = 0 ; i < 10 ; i++)
 {
 char a;
 
-	for (a = 'a' ; a <= 'z' ; a++)
-	{
-    _putchar(a);
-	}
+for (a = 'a' ; a <= 'z' ; a++)
+{
+_putchar(a);
+}
 _putchar('\n');
 }
 }
