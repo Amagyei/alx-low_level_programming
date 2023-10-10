@@ -2,6 +2,8 @@
 /**
  * print_alphabet - function that print alphabets in lower case
  *
+ * Description : function iterates a loop that prints a to z
+ *
  * Return: always 0;
  */
 
@@ -17,7 +19,8 @@ for ( i = 0 ; i < 10 ; i++ )
 	{
         _putchar(a);
 	
-        _putchar('\n');
+        
     }
+    _putchar('\n');
 }
 }
