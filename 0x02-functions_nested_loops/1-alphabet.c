@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - the main function
@@ -15,14 +16,9 @@ void print_alphabet(void)
 char letter = 'a';
 while (letter <= 'z')
 {
-	putchar(letter);
+	_putchar(letter);
 	letter++;
 }
-putchar('\n');
+_putchar('\n');
 }
 
-int main(void)
-{
-print_alphabet();
-return (0);
-}
