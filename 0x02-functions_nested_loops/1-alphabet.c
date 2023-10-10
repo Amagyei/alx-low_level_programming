@@ -9,7 +9,7 @@
  *
  */
 
-char print_alphabet()
+void print_alphabet(void)
 {
 /* initializing the variable */
 char letter = 'a';
@@ -19,7 +19,6 @@ while (letter <= 'z')
 	letter++;
 }
 putchar('\n');
-return (0);
 }
 
 int main(void)
