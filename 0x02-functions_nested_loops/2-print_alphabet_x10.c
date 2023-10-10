@@ -1,10 +1,8 @@
 #include "main.h"
 /**
- * main - entry point
+ * print_alphabet_x10 - program that print alphabet lowercase
  *
- * Description : 'Code to print tht alphabet'
- *
- * Return: Always 0 (success)
+ * Return: Always 0
  */
 
 void print_alphabet_x10(void)
