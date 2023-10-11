@@ -6,23 +6,25 @@
  * Description : 'Hopefully it all works'
  * starting from 00:00 to 23:59
  */
-int main(void)
+int main()
 {
 	long int a = 0;
 	long int b = 1;
 	long int sum = 0;
-	long int even_term;
+	int i = 0;
 
-	while (sum <= 4000000)
-	{
+	for (i = 0; i < 99; i++){
 		sum = a + b;
-		if ((sum % 2) == 0)
+		if (i == 49)
 		{
-			even_term += sum;
+			printf("%ld\n" ,sum);
 		}
+		else
+			printf("%ld, " ,sum);
+
 		a = b;
 		b = sum;
 	}
-	printf("%ld\n", even_term);
-	return (0);
+	
+	return 0;
 }
