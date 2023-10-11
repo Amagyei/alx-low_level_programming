@@ -13,13 +13,13 @@ int main()
 
 	for (i = 0; i < 50; i++){
 		sum = a + b;
-		if (i = 50)
+		if (i == 49)
 		{
-			printf("%ld\n" ,sum);
+			printf("%ld" ,sum);
 		}
 		else
 			printf("%ld, " ,sum);
-		
+
 		a = b;
 		b = sum;
 	}
