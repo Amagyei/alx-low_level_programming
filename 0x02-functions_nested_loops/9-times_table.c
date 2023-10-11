@@ -18,7 +18,7 @@ void jack_bauer(void)
 			int a = i * j;
 
             _putchar(a);
-            j++
+            j++;
 		}
 		i++;
 	}
