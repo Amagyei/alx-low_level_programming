@@ -7,8 +7,8 @@
  *
  * Return: Always 0 (success)
  */
-int main(void)
+int add(int a, int b)
 {
-puts("_putchar");
-return (0);
+
+return (a + b);
 }
