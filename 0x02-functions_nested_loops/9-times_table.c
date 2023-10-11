@@ -33,6 +33,8 @@ void times_table(void)
             _putchar('0' + a % 10);
             _putchar(',');
             _putchar(' ');
+            _putchar(' ');
+
             }
             
             j++;
