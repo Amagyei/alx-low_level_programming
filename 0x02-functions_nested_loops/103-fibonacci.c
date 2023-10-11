@@ -17,12 +17,12 @@ int main()
 		sum = a + b;
 		if ((sum % 2) == 0)
 		{
-			printf("%ld\n" ,sum);
+			int even_term+= sum;
 		}
-		
 		a = b;
 		b = sum;
 	}
+	printf("%ld\n" ,even_term);
 	
 	return 0;
 }
