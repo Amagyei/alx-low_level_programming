@@ -24,8 +24,12 @@ void times_table(void)
 
                 _putchar('0' + tens);
                 _putchar('0' + ones);
-                _putchar(',');
-                _putchar(' ');
+                if (j != 9)
+                {
+                    _putchar(',');
+                    _putchar(' ');
+                }
+                
 
             }
             else
