@@ -12,7 +12,7 @@ int main(void)
 
 	while (a < 1024)
 	{
-		if(a % 3 ==0|| a % 5 == 0)
+		if((a % 3) == 0 || (a % 5) == 0)
 		{
 			sum += a;
 		}
@@ -20,5 +20,5 @@ int main(void)
 	}
 
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
