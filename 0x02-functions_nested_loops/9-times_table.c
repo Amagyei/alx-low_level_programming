@@ -19,7 +19,12 @@ void times_table(void)
 
             if (a >= 10 )
             {
-                _putchar('0' +(( a / 10 ) % 10));
+                int tens = (a / 10);
+                int ones = (n % 10);
+
+                _putchar('0' + tens);
+                _putchar('0' + ones);
+
             }
             else
             _putchar('0' + a % 10);
