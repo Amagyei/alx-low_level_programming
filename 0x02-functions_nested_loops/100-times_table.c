@@ -1,46 +1,41 @@
-#include "main.h"
+#include"main.h"
+
 /**
- * print_times_table - prints every minute of the day of Jack Bauer
- * Description : 'Hopefully it all works'
- * Return: ALways 0 (Success)
- */
-void print_times_table(int numlim)
+ * print_times_table - prints time table of n
+ *
+ * @n: takes number input
+*/
+
+void print_times_table(int n)
 {
-	int i, j, k;
+int prod, mult, num;
 
-	i = 0;
-
-	while (i < numlim)
+	if (n <= 15 && n >= 0)
 	{
-		j = 0;
-
-		while (j <= numlim)
+		for (num = 0; num <= n; ++num)
 		{
-        k = j * i;
-
-			if (j == 0)
-			{
-				_putchar(k + '0');
-			}
-			if (k < numlim && j != 0)
+			_putchar(48);
+			for (mult = 1; mult <= n; ++mult)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
 
-				_putchar(k + '0');
-			} else if (k >= numlim)
-			{
+				prod = num * mult;
 
-				_putchar(',');
-				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
+				if (prod <= 9)
+					_putchar(' ');
+				if (prod <= 99)
+					_putchar(' ');
+
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + 48);
+					_putchar((prod / 10) % 10 + 48);
+				} else if (prod <= 99 && prod >= 10)
+					_putchar((prod / 10) + 48);
+				_putchar((prod % 10) + 48);
 			}
-        j++;
-        }
-        _putchar('\n');
-		i++;
+			_putchar('\n');
+		}
 	}
 }
