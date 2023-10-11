@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * print_alphabet_x10 - program that print alphabet lowercase
+ * Description : program that print alphabet lowercase
  *
  * _isalpha - A program that checks for lowercase.
  *
