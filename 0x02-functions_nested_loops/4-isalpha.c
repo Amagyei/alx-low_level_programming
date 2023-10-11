@@ -2,7 +2,6 @@
 #include <ctype.h>
 
 /**
-
  * _isalpha - A program that checks for lowercase.
  * Description : 'Hopefully it all works'
  *
