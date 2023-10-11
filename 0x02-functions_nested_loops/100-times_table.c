@@ -31,6 +31,7 @@ void times_table(lim)
 				_putchar(k + '0');
 			} else if (k >= lim)
 			{
+				
 				_putchar(',');
 				_putchar(' ');
 				_putchar((k / 10) + '0');
