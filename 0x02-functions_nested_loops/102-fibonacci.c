@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - prints every minute of the day of Jack Bauer
+ * main - Entry point
  *
  * Description : 'Hopefully it all works'
  * starting from 00:00 to 23:59
@@ -17,7 +17,7 @@ int main()
 		sum = a + b;
 		if (i == 49)
 		{
-			printf("%ld " ,sum);
+			printf("%ld\n" ,sum);
 		}
 		else
 			printf("%ld, " ,sum);
