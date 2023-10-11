@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * jack_bauer - prints every minute of the day of Jack Bauer
+ * print_times_table - prints every minute of the day of Jack Bauer
  * starting from 00:00 to 23:59
  */
-void times_table(lim)
+void print_times_table(int numlim)
 {
 	int i, j, k;
 
 	i = 0;
 
-	while (i < lim)
+	while (i < numlim)
 	{
 		j = 0;
 
-		while (j < lim)
+		while (j < numlim)
 		{
         k = j * i;
 
@@ -21,7 +21,7 @@ void times_table(lim)
 			{
 				_putchar(k + '0');
 			}
-			if (k < lim && j != 0)
+			if (k < numlim && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -29,9 +29,9 @@ void times_table(lim)
 				_putchar(' ');
 
 				_putchar(k + '0');
-			} else if (k >= lim)
+			} else if (k >= numlim)
 			{
-				
+
 				_putchar(',');
 				_putchar(' ');
 				_putchar((k / 10) + '0');
