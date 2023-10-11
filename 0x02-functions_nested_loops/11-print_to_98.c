@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Entry point
+ * print_to_98 - Entry point
  *
  * Description : 'printing whether random number is negative positive or zer'
- *
+ * @n: takes number input
  * Return: Always 0 (success)
  */
 void print_to_98(int n)
