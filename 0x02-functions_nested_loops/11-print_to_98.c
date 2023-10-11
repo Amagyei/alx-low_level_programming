@@ -15,11 +15,12 @@ while (n != 98){
         printf("%d, ", n);
         n--;
     }
-    else if {
+    else if (n > 98)
+    {
         printf("%d, ", n);
         n++;
     }
     else 
-        puts(98);
+        printf("98\n");
 }
 }
