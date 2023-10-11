@@ -6,7 +6,7 @@
  *
  * _isalpha - A program that checks for lowercase.
  *
- *  @c: A parameter to check for lowercase
+ * @c: A parameter to check for lowercase
  * Return: Always 0
  */
 
