@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description : 'Hopefully it all works'
- * starting from 00:00 to 23:59
+ * Return: ALways 0 (Success)
  */
 int main()
 {

@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_times_table - prints every minute of the day of Jack Bauer
- * starting from 00:00 to 23:59
+ * Description : 'Hopefully it all works'
+ * Return: ALways 0 (Success)
  */
 void print_times_table(int numlim)
 {
