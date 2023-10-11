@@ -3,7 +3,7 @@
  * jack_bauer - prints every minute of the day of Jack Bauer
  * starting from 00:00 to 23:59
  */
-int _start(void)
+int main()
 {
 	int a = 0;
 	int sum = 0;
