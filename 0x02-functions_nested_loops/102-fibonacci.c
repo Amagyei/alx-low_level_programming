@@ -13,18 +13,17 @@ int main(void)
 	long int sum = 0;
 	int i = 0;
 
-	for (i = 0; i < 50; i++){
+	for (i = 0; i < 50; i++)
+	{
 		sum = a + b;
 		if (i == 49)
 		{
-			printf("%ld\n" ,sum);
+			printf("%ld\n", sum);
 		}
 		else
-			printf("%ld, " ,sum);
-
+			printf("%ld, ", sum);
 		a = b;
 		b = sum;
 	}
-	
 	return 0;
 }
