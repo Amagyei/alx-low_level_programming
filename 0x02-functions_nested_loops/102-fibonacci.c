@@ -17,7 +17,7 @@ int main()
 		sum = a + b;
 		if (i == 49)
 		{
-			printf("%ld" ,sum);
+			printf("%ld " ,sum);
 		}
 		else
 			printf("%ld, " ,sum);
