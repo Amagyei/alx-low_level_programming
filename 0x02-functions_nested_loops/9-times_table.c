@@ -19,7 +19,7 @@ void times_table(void)
 
             _putchar('0' + a % 10);
             j++;
-            _putchar('\n')
+            _putchar('\n');
 		}
 		i++;
 	}
