@@ -15,7 +15,7 @@ while (n != 98){
         printf("%d, ", n);
         n--;
     }
-    else if (n > 98)
+    else if (n < 98)
     {
         printf("%d, ", n);
         n++;
