@@ -14,7 +14,7 @@ void print_times_table(int numlim)
 	{
 		j = 0;
 
-		while (j < numlim)
+		while (j <= numlim)
 		{
         k = j * i;
 
