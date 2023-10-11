@@ -20,7 +20,7 @@ while (n != 98){
         printf("%d, ", n);
         n++;
     }
-    else 
-        printf("98\n");
+        
 }
+printf("98\n");
 }
