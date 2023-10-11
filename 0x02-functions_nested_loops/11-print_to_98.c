@@ -20,6 +20,6 @@ while (n != 98){
         n++;
     }
     else 
-        printf(98)
+        printf(98);
 }
 }
