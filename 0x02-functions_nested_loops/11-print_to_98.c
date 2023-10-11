@@ -17,8 +17,7 @@ while (n != 98){
         n--
     }
     else {
-        printf(n);
-        putchar(', ')
+        printf("%d, ", n);
         n++
     }
     return (0)
