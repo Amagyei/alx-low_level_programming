@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - prints every minute of the day of Jack Bauer
+ * times_table - prints every minute of the day of Jack Bauer
  * Description : 'Hopefully it all works'
  * Return: ALways 0 (Success)
  */
