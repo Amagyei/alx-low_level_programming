@@ -15,9 +15,11 @@ while (n != 98){
         printf("%d, ", n);
         n--;
     }
-    else {
+    else if {
         printf("%d, ", n);
         n++;
     }
+    else 
+        printf(98)
 }
 }
