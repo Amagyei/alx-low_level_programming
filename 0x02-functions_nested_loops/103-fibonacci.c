@@ -11,13 +11,14 @@ int main()
 	long int a = 0;
 	long int b = 1;
 	long int sum = 0;
+	long int even_term ;
 
 	while(sum <= 4000000)
 	{
 		sum = a + b;
 		if ((sum % 2) == 0)
 		{
-			int even_term += sum;
+			even_term += sum;
 		}
 		a = b;
 		b = sum;
