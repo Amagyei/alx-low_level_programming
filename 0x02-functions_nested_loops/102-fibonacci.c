@@ -11,9 +11,15 @@ int main()
 	long int sum = 0;
 	int i = 0;
 
-	for (i = 0; i <= 50; i++){
+	for (i = 0; i < 50; i++){
 		sum = a + b;
-		printf("%ld, " ,sum);
+		if (i = 50)
+		{
+			printf("%ld\n" ,sum);
+		}
+		else
+			printf("%ld, " ,sum);
+		
 		a = b;
 		b = sum;
 	}
