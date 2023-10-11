@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int i, j;
+	int i, j, k;
 
 	i = 0;
 
@@ -15,47 +15,25 @@ void times_table(void)
 
 		while (j < 10)
 		{
-			int a = i * j;
+        k = j * i;
 
-            if (a >= 10 )
-            {
-                int tens = (a / 10);
-                int ones = (a % 10);
-
-                _putchar('0' + tens);
-                _putchar('0' + ones);
-                if (j != 9)
-                {
-                    _putchar(',');
-                    _putchar(' ');
-
-                }
-                
-
-            }
-            else
-            {
-                if (j > 1)
-                {
-                    _putchar(' ');
-                    _putchar('0' + a % 10);
-                    if (j != 9)
-                    {
-                        _putchar(',');
-                        _putchar(' ');
-                    }
-                }
-                else 
-                {
-                    _putchar('0' + a % 10);
-                    if (j != 9)
-                        {
-                            _putchar(',');
-                            _putchar(' ');
-                            _putchar(' ');
-                        }
-                }
-            }
+			if (j == 0)
+			{
+				_putchar(k + '0');
+			}
+			if (k < 10 && j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(k + '0');
+			} else if (k >= 10)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((k / 10) + '0');
+				_putchar((k % 10) + '0');
+			}
         j++;
         }
 		i++;
