@@ -8,14 +8,14 @@ int main()
 {
 	int a = 0;
 	int b = 1;
-	int sum = 0
+	int sum = 0;
 	int i = 0;
 
 	for (i = 0; i <= 50; i++){
 		sum = a + b;
 		printf("%d, " ,sum);
 		a = b;
-		b = sum
+		b = sum;
 	}
 	
 	return 0;
