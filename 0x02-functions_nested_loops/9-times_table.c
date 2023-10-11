@@ -46,7 +46,8 @@ void times_table(void)
                         _putchar(' ');
                     }
                 }
-                else {
+                else 
+                {
                     _putchar('0' + a % 10);
                     if (j != 9)
                         {
@@ -55,15 +56,10 @@ void times_table(void)
                             _putchar(' ');
                         }
                 }
-                }
-                
             }
-            
-            j++;
-		}
+        j++;
+        }
         _putchar('\n');
 		i++;
 	}
-
-    _putchar(3);
 }
