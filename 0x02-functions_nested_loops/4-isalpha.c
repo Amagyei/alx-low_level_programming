@@ -2,8 +2,9 @@
 #include <ctype.h>
 
 /**
- * Description : 'Hopefully it all works'
+
  * _isalpha - A program that checks for lowercase.
+ * Description : 'Hopefully it all works'
  *
  * @c: A parameter to check for lowercase
  * Return: Always 0
