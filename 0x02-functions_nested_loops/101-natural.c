@@ -16,5 +16,5 @@ int main()
 		}
 		a++;
 	}
-	return sum
+	return sum;
 }
