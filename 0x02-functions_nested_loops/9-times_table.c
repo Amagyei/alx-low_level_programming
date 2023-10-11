@@ -42,6 +42,10 @@ void times_table(void)
                         _putchar(' ');
                         _putchar(' ');
                     }
+                if (j > 2){
+                    _putchar(' ');
+                }
+
             }
             
             j++;
