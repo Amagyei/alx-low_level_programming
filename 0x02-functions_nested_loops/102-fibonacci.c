@@ -6,7 +6,7 @@
  * Description : 'Hopefully it all works'
  * Return: ALways 0 (Success)
  */
-int main()
+int main(void)
 {
 	long int a = 0;
 	long int b = 1;
