@@ -11,7 +11,6 @@ int main()
 	long int a = 0;
 	long int b = 1;
 	long int sum = 0;
-	int i = 0;
 
 	while(sum <= 4000000)
 	{
