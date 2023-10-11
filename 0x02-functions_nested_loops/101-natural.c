@@ -5,7 +5,7 @@
  * Description : 'Hopefully it all works'
  * Return: ALways 0 (Success)
  */
-int main()
+int main(void)
 {
 	int a = 0;
 	int sum = 0;
@@ -14,11 +14,11 @@ int main()
 	{
 		if(a % 3 ==0|| a % 5 == 0)
 		{
-			sum+=a;
+			sum += a;
 		}
 		a++;
 	}
 
-	printf("%d\n" ,sum);
+	printf("%d\n", sum);
 	return 0;
 }
