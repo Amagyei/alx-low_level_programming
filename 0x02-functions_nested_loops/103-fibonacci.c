@@ -17,7 +17,7 @@ int main()
 		sum = a + b;
 		if ((sum % 2) == 0)
 		{
-			int even_term+= sum;
+			int even_term += sum;
 		}
 		a = b;
 		b = sum;
