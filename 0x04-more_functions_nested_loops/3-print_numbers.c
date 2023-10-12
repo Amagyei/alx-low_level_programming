@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * mul - Entry point
  * @a : this thing
@@ -9,9 +10,11 @@
  */
 void print_numbers(void)
 {
-    int i = 0;
-    for (i = 0; i < 10; i++){
-        printf("%d", i);
-    }
-    putchar('\n');
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		_putchar(i + '0');
+	}
+	_putchar('\n');
 }
