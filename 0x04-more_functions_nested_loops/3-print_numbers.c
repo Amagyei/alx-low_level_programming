@@ -7,8 +7,10 @@
  * @b : this thing
  * Return: Always 0 (success)
  */
-int void print_numbers(void)
+void print_numbers(void)
 {
-
-return (a * b);
+    int i = 0;
+    for (i = 0; i < 10; i++){
+        printf("%d", i);
+    }
 }
