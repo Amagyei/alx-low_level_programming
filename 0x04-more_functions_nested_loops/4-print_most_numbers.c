@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * print_numbers - Entry point
+ * print_most_numbers - Entry point
  * Description : 'printing whether random number is negative positive or zer'
  * Return: Always 0 (success)
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
