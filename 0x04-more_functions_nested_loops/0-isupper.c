@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdio.h>
 
 /**
  * _islower - A program that checks for lowercase.
@@ -15,5 +16,7 @@ if (a != 0)
 {
 a = 1;
 }
+else
+a = 0;
 return (a);
 }
