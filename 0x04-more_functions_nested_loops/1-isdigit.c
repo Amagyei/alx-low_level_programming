@@ -8,25 +8,28 @@
  * @c: A parameter to check for lowercase
  * Return: Always 0
  */
-
-int _isdigit(int c)
+int _isupper(int c)
 {
-int a = isdigit(c);
-if (a != 0)
-{
-a = 1;
+	return (c >= 'A' && c <= 'Z');
 }
-else
-a = 0;
-return (a);
-}
-// int main(void)
+// int _isdigit(int c)
 // {
-//     char c;
-
-//     c = '0';
-//     printf("%c: %d\n", c, _isdigit(c));
-//     c = 'a';
-//     printf("%c: %d\n", c, _isdigit(c));
-//     return (0);
+// int a = isdigit(c);
+// if (a != 0)
+// {
+// a = 1;
 // }
+// else
+// a = 0;
+// return (a);
+// }
+// // int main(void)
+// // {
+// //     char c;
+
+// //     c = '0';
+// //     printf("%c: %d\n", c, _isdigit(c));
+// //     c = 'a';
+// //     printf("%c: %d\n", c, _isdigit(c));
+// //     return (0);
+// // }
