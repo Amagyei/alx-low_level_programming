@@ -20,7 +20,3 @@ else
 a = 0;
 return (a);
 }
-int main (void){
-    int g = 3;
-    _isdigit(g);
-}
