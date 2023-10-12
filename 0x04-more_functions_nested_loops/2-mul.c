@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * add - Entry point
+ * mul - Entry point
  * @a : this thing
  * Description : 'printing whether random number is negative positive or zer'
  * @b : this thing
