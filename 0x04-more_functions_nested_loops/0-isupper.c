@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _islower - A program that checks for lowercase.
+ * _isupper - A program that checks for lowercase.
  * Description : 'printing whether random number is negative positive or zer'
  * @c: A parameter to check for lowercase
  * Return: Always 0
