@@ -6,7 +6,7 @@
  * Description : 'printing whether random number is negative positive or zer'
  * Return: Always 0 (success)
  */
-void print_numbers(void)
+void more_numbers(void)
 {
 	int i;
     for (i = 0; i < 11; i++){
