@@ -9,6 +9,7 @@
  *  * @n : this thing
  */
 
+<<<<<<< HEAD
 void print_diagonal(int n){
     int i;
     for (i = 0; i < n; i++)
@@ -16,5 +17,15 @@ void print_diagonal(int n){
         _putchar('\\');
     }
     _putchar('\n');
+=======
+void print_diagonal(int n)
+{
+int i;
+for (i = 0; i < n; i++)
+{
+_putchar("\\");
+_putchar('\n');
+}
+>>>>>>> refs/remotes/origin/master
 
 }
