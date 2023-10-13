@@ -7,6 +7,7 @@ int mul(int a, int b);
 int _putchar(char c);
 void print_numbers();
 void print_most_numbers();
+void more_numbers();
 
 
 #endif  /* MAIN_H */
