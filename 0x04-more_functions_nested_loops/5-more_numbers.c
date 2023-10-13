@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * print_numbers - Entry point
+ * more_numbers - Entry point
  * Description : 'printing whether random number is negative positive or zer'
  * Return: Always 0 (success)
  */
