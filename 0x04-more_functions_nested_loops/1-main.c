@@ -3,7 +3,7 @@
 
 /**
  * main - check the code.
- *
+ * Description : 'helllo people and others'
  * Return: Always 0.
  */
 int main(void)
