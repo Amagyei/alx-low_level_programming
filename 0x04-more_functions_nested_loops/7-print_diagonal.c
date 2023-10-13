@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -10,6 +10,7 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 void print_diagonal(int n){
     int i;
     for (i = 0; i < n; i++)
@@ -18,6 +19,8 @@ void print_diagonal(int n){
     }
     _putchar('\n');
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 void print_diagonal(int n)
 {
 int i;
@@ -26,6 +29,9 @@ for (i = 0; i < n; i++)
 _putchar("\\");
 _putchar('\n');
 }
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
 >>>>>>> refs/remotes/origin/master
 
 }
