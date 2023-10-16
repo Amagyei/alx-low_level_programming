@@ -19,6 +19,6 @@ int i;
 
 for (i = n - 1; i >= 0; i--)
 {
-    putchar(a[i]);
+    putchar(s[i]);
 }
 }
