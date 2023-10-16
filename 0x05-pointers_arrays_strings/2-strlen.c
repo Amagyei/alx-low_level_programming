@@ -10,7 +10,7 @@
  * Return: Always 0.
  */
 
-void _strlen(char *s)
+int _strlen(char *s)
 {
-return(len(*s))
+return(len(*s));
 }
