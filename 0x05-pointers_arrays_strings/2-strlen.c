@@ -12,5 +12,5 @@
 
 void _strlen(char *s)
 {
-return(len *s)
+return(len(*s))
 }
