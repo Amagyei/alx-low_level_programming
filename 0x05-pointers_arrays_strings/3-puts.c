@@ -12,6 +12,6 @@
 
 void _puts(char *str)
 {
-char a[] = *str
+char a[] = &str
 puts(a);
 }

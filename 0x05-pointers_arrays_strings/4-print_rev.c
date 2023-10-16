@@ -14,11 +14,12 @@
 
 void print_rev(char *s)
 {
-int n = strlen(s);
+char a[] = &s
+int n = strlen(a);
 int i;
 
 for (i = n; i >= 0; i--)
 {
-    putchar(s[i]);
+    putchar(a[i]);
 }
 }
