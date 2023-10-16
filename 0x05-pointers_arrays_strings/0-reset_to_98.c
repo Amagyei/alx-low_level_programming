@@ -6,6 +6,7 @@
  *
  * Description : 'check the code'
  *
+ * @n: A parameter to check for lowercase
  * Return: Always 0.
  */
 
