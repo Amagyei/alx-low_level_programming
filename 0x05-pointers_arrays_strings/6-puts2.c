@@ -3,7 +3,7 @@
 /**
  * _strlen - check the code
  *
- * Description : 'check the code'
+ * Descriptit on : 'check the code'
  *
  * @s: A parameter to check for lowercase
  * Return: Always 0.
