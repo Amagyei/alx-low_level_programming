@@ -2,11 +2,12 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - check the code
+ * swap_int - check the code
  *
  * Description : 'check the code'
  *
- * @n: A parameter to check for lowercase
+ * @a: A parameter to check for lowercase
+ * @b: A parameter to check for lowercase
  * Return: Always 0.
  */
 
