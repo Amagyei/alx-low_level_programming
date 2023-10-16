@@ -15,19 +15,14 @@
 void rev_string(char *s)
 {
 int n = strlen(s);
-     int n = strlen(s);
-    char *a = malloc(n + 1);  // Allocate memory for the reversed string.
+char a[10];
+int i;
+int j = 0;
 
-    if (a != NULL) {
-        for (int i = 0; i < n; i++) {
-            a[i] = s[n - 1 - i];
-        }
-        a[n] = '\0';
-
-        strcpy(s, a);
-        free(a);
-    } else {
-
+    for (i = n -1; i >= 0; i--){
+        a[j] = s[i];
+        j++;
     }
+strcpy(s, a);
 }
 
