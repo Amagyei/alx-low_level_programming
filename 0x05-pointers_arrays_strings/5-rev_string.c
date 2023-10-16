@@ -18,9 +18,11 @@ int n = strlen(s);
 char a;
 int i;
 
-for (i = n; i >= 0; i--)
+for (i = n - 1 ; i >= 0; i--)
 {
     a[i] = s[i]
 }
-putchar('\n');
+a[n] = '\n'
+
+return (a[])
 }
