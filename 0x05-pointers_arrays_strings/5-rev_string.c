@@ -25,9 +25,9 @@ int n = strlen(s);
         a[n] = '\0';
 
         strcpy(s, a);
-        free(a); 
+        free(a);
     } else {
-        
+
     }
 }
-}
+
