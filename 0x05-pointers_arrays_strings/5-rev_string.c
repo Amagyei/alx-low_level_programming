@@ -15,7 +15,7 @@
 void rev_string(char *s)
 {
 int n = strlen(s);
-char a[10];
+char a[447];
 int i;
 int j = 0;
 
