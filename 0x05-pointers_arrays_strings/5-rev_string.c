@@ -15,13 +15,12 @@
 void rev_string(char *s)
 {
 int n = strlen(s);
-char a[];
-int i;
+    char a[n + 1];
 
-for (i = n - 1 ; i >= 0; i--)
-{
-    a[i] = s[i];
-}
-a[n] = '\n';
-s[] = a[]
+    for (int i = 0; i < n; i++) {
+        a[i] = s[n - 1 - i];
+    }
+    a[n] = '\0';
+
+    strcpy(s, a);
 }
