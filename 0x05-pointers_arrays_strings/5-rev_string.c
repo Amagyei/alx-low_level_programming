@@ -20,9 +20,9 @@ int i;
 
 for (i = n - 1 ; i >= 0; i--)
 {
-    a[i] = s[i]
+    a[i] = s[i];
 }
-a[n] = '\n'
+a[n] = '\n';
 
-return (a[])
+return (a[]);
 }
