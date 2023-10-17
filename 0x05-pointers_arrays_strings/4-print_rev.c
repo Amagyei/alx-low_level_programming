@@ -4,7 +4,7 @@
 
 
 /**
- * _strlen - check the code
+ * print_rev - check the code
  *
  * Description : 'check the code'
  *
