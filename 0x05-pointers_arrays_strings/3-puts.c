@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strlen - check the code
+ * _puts - check the code
  *
  * Description : 'check the code'
  *
- * @s: A parameter to check for lowercase
+ * @str: A parameter to check for lowercase
  * Return: Always 0.
  */
 
