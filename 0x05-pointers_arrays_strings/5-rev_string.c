@@ -4,7 +4,7 @@
 
 
 /**
- * _strlen - check the code
+ * rev_string - check the code
  *
  * Description : 'check the code'
  *
@@ -19,10 +19,11 @@ char a[10];
 int i;
 int j = 0;
 
-    for (i = n -1; i >= 0; i--){
-        a[j] = s[i];
-        j++;
-    }
+for (i = n -1; i >= 0; i--)
+{
+a[j] = s[i];
+j++;
+}
 strcpy(s, a);
 }
 
