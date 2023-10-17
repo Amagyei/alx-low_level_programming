@@ -4,7 +4,7 @@
 /**
  * puts2 - check the code
  *
- * Descriptit on : 'check the code'
+ * Description : 'check the code'
  *
  * @str: A parameter to check for lowercase
  * Return: Always 0.
