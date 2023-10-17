@@ -1,29 +1,23 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * puts2 - function should print only one character out of two
- * starting with the first one
- * @str: input
- * Return: print
+ * puts2 - check the code
+ *
+ * Description : 'check the code'
+ *
+ * @str: A parameter to check for lowercase
+ * Return: Always 0.
  */
+
 void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
-	char *y = str;
-	int o;
+int n = strlen(str);
+int i;
 
-	while (*y != '\0')
-	{
-		y++;
-		longi++;
-	}
-	t = longi - 1;
-	for (o = 0 ; o <= t ; o++)
-	{
-		if (o % 2 == 0)
-	{
-		_putchar(str[o]);
-	}
-	}
-	_putchar('\n');
+for (i = 0; i < n - 1; i += 2)
+{
+_putchar(str[i]);
+}
+_putchar('\n');
 }
