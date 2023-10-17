@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 /**
- * reset_to_98 - check the code
+ * _strlen - check the code
  *
  * Description : 'check the code'
  *
- * @n: A parameter to check for lowercase
+ * @s: A parameter to check for lowercase
  * Return: Always 0.
  */
 
-void reset_to_98(int *n)
+void _puts(char *str)
 {
-*n = 98;
+puts(str);
 }
