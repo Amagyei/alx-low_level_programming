@@ -1,12 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * print_line - Entry point
- * Description : 'printing whether random number is negative positive or zer'
- * Return: Always 0 (success)
- *  * @n : this thing
+ * print_diagonal - draws a diagonal line on the terminal
+ * @n: number of times the character \ should be printed
  */
 
 <<<<<<< HEAD
@@ -26,12 +22,24 @@ void print_diagonal(int n){
 >>>>>>> refs/remotes/origin/master
 void print_diagonal(int n)
 {
-int i;
+if (n <= 0)
+{
+_putchar('\n');
+} else
+{
+int i, j;
 for (i = 0; i < n; i++)
 {
+for (j = 0; j < n; j++)
+{
+if (j == i)
 _putchar('\\');
+else if (j < i)
+_putchar(' ');
+}
 _putchar('\n');
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
@@ -40,5 +48,9 @@ _putchar('\n');
 =======
 >>>>>>> refs/remotes/origin/master
 
+=======
+>>>>>>> 9790135deb4688d9ff1937de59db7a489f899f9d
 }
+}
+
 
