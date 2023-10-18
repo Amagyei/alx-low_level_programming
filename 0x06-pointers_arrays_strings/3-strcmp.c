@@ -13,5 +13,5 @@
 
 char *_strcmp(char *dest, char *src)
 {
-return(stcmp(dest, src));
+return(strcmp(dest, src));
 }
