@@ -2,7 +2,7 @@
 
 char *leet(char *str) {
     char *source = "aAeEoOtTlL";
-    char *leet = "44370171";
+    char *leet = "4433007711";
     int i, j;
 
     for (i = 0; str[i]; i++) {
