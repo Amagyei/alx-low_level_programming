@@ -10,12 +10,12 @@
  * Description : 'check the code'
  */
 
-char *cap_string(char *)
+char *string_toupper(char *a)
 {
     int i;
     for (i = 0; i < ((int)strlen(a)); i ++)
     {
-        if (!(isupper(a[i])))
+        if (islower(a[i]))
         {
             a[i] = toupper(a[i]);
         }
