@@ -23,7 +23,14 @@ char *cap_string(char *s)
     *    }}
         
     */
-    for (i = 0; i <((int)strlen(s)); i++) {
+    for (i = 0; i <((int)strlen(s)); i++)
+    {
+        int j = i - 1;
+        if (((i == 0) ||  (*(s + j) == ' ' )|| (*(s + j) == '\n') || (*(s + j) == '.')  || (*(s + j) == ';')  || (*(s + j) == '!')  || (*(s + j) == '"')  || (*(s + j) == '(')  || (*(s + j) == ')')  || (*(s + j) == '{')  || (*(s + j) == '}')|| (*(s + j) == ',')) && (islower(s[i]))) {
+            s[i] = toupper(s[i]);
+        }
+    }
+    for (i = 0; i < ((int)strlen(s)); i++) {
         if ((i == 0 || !isalpha(s[i - 1])) && islower(s[i])) {
             s[i] = toupper(s[i]);
         }
