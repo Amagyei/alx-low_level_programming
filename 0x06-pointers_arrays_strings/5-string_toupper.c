@@ -12,13 +12,13 @@
 
 char *string_toupper(char *a)
 {
-    int i;
-    for (i = 0; i < ((int)strlen(a)); i ++)
-    {
-        if (islower(a[i]))
-        {
-            a[i] = toupper(a[i]);
-        }
-    }
-    return (a);
+int i;
+for (i = 0; i < ((int)strlen(a)); i ++)
+{
+if (islower(a[i]))
+{
+a[i] = toupper(a[i]);
+}
+}
+return (a);
 }
