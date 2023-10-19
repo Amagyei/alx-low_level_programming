@@ -3,6 +3,7 @@
 
 /**
  * _putchar - writes the character c to stdout
+ * Description : 'check the code'
  * @dest: The character to print
  * @src: The character to print
  * @n: lorem ipsum dolor

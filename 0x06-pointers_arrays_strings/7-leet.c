@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * leet - prints reverse array.
+ * @str: size of array.
+
+ * Return: reversed array.
+ */
+
 char *leet(char *str) {
     char *source = "aAeEoOtTlL";
     char *leet = "4433007711";

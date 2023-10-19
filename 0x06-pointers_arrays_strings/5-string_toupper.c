@@ -7,6 +7,7 @@
  * @a: array to be compared.
  * @n: size of array.
  * Return: reversed array.
+ * Description : 'check the code'
  */
 
 char *cap_string(char *)

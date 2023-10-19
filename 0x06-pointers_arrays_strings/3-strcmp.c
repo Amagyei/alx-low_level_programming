@@ -6,6 +6,7 @@
  * @dest: The character to print
  * @src: The character to print
  *
+ * Description : 'check the code'
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
