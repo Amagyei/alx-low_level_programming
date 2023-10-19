@@ -9,24 +9,24 @@
  * Return: reversed array.
  */
 
-char *cap_string(char *a)
+char *cap_string(char *s)
 {
     
     int i;
-    for (i = 0; i < ((int)strlen(a)); i++ )
-    {
-        if (i == 0)
-        {
-            a[i] = toupper(a[i]);
-        }
-        else if (a[i--] == ' ' || a[i--] == '\n' || a[i--] == '.' )
-        {
-            while (!(isalpha(a[i])))
-            {
-                i++;
-            }
-            
+    /* this almost worked if not for two letters between multiple spaces */
+    // for (i = 0; i < ((int)strlen(s)); i++ )
+    // {
+    //     while(( *(s + i) == ' ' )|| (*(s + i) == '\n') || (*(s + i) == '.'))
+    //     {
+    //         i++;
+    //        *(s + (i)) = toupper(*(s + (i)));
+    //     }
+        
+    // }
+    for (i = 0; i <((int)strlen(s)); i++) {
+        if ((i == 0 || !isalpha(s[i - 1])) && islower(s[i])) {
+            s[i] = toupper(s[i]);
         }
     }
-    return (a);
+    return (s);
 }

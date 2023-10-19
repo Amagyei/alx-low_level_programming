@@ -13,5 +13,6 @@
 
 char *_strcmp(char *dest, char *src)
 {
-return(strcmp(dest, src));
+   int a = (int) strcmp(dest, src);
+return (a);
 }
