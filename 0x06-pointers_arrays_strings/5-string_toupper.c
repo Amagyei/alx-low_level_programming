@@ -12,7 +12,7 @@
 char *string_toupper(char *a)
 {
 int i;
-for (i = 0; i < ((int)strlen(a)); i ++)
+for (i = 0; i < ((int)strlen(a)); i++)
 {
 if (islower(a[i]))
 {
