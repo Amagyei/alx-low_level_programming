@@ -4,7 +4,7 @@
 
 
 /**
- * _strlen - check the code
+ * print_rev - check the code
  *
  * Description : 'check the code'
  *
@@ -19,7 +19,7 @@ int i;
 
 for (i = n - 1; i >= 0; i--)
 {
-    putchar(s[i]);
+putchar(s[i]);
 }
 putchar('\n');
 }

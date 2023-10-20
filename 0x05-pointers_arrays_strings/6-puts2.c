@@ -2,11 +2,11 @@
 #include <string.h>
 
 /**
- * _strlen - check the code
+ * puts2 - check the code
  *
- * Descriptit on : 'check the code'
+ * Description : 'check the code'
  *
- * @s: A parameter to check for lowercase
+ * @str: A parameter to check for lowercase
  * Return: Always 0.
  */
 
@@ -17,7 +17,7 @@ int i;
 
 for (i = 0; i < n - 1; i += 2)
 {
-    _putchar(str[i]);
+_putchar(str[i]);
 }
 _putchar('\n');
 }
