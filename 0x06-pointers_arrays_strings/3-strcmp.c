@@ -14,6 +14,5 @@
 
 char *_strcmp(char *dest, char *src)
 {
-   int a = (int) strcmp(dest, src);
-return (a);
+return strcmp(dest, src);
 }
