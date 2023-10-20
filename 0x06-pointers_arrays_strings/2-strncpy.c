@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- *  _strncat - writes the character c to stdout
+ * _strncpy - writes the character c to stdout
  * Description : 'check the code'
  * @dest: The character to print
  * @src: The character to print
@@ -15,5 +15,5 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-return(strncpy(dest, src, n));
+return (strncpy(dest, src, n));
 }
