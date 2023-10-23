@@ -10,6 +10,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int a = sizeof(_strspn(s, accept));
+
 	return (a);
 }
 
