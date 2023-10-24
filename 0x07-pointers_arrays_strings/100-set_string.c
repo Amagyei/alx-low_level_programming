@@ -11,6 +11,6 @@
 
 void set_string(char **s, char *to)
 {
-	strcpy(to, *s);
+	*s = to;
 }
 
