@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 
 /**
@@ -12,18 +13,16 @@
  * Return: void
  */
 
+
+
 void _print_rev_recursion(char *s)
 {
+
 	if (*s != '\0')
 	{
-		s++;
-	}
-	while (s != 0)
-	{
+		_print_rev_recursion(s + 1);
 		putchar(*s);
-		s--;
 	}
-
 }
 
 
