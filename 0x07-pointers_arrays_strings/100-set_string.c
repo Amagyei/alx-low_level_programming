@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - assign bytes of length b to string s
+ * set_string - assign bytes of length b to string s
  * Description : 'same thins '
- * @a :no of bytes
- * @size :no of bytes
+ * @to :no of bytes
+ * @s :no of bytes
  * Return: first somethiing
  */
 
