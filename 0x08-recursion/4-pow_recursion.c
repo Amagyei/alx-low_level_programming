@@ -15,14 +15,14 @@
 
 int _pow_recursion(int x, int y)
 {
-	int a = 1;
+	int *a = 1;
 	if (y < 0)
 		return (-1);
 	if (y >= 1)
 	{
 		y--;
-		return(_pow_recursion(a, y));
-		a *= x;
+		return(_pow_recursion(x, y));
+		a = *a *  x;
 	}
 	if ( y  == 0)
 		return 1;
