@@ -4,11 +4,13 @@
 
 
 /**
- * factorial - print in reverse
+ * _pow_recursion - print in reverse
  *
  * Description: ' Loopt through string and print revercse'
  *
- * @n: 'pointer to string to be printed'
+ * @x: 'pointer to string to be printed'
+ *
+ * @y: 'pointer to string to be printed'
  *
  * Return: void
  */
@@ -19,7 +21,7 @@ int _pow_recursion(int x, int y)
 		return (-1);
 	if (y == 0)
 		return (1);
-	return x * _pow_recursion(x, y - 1);
+	return (x * _pow_recursion(x, y - 1));
 }
 
 
