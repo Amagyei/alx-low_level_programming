@@ -1,4 +1,3 @@
-#include "main.h"
 
 int sqrt_function(int n, int i);
 
