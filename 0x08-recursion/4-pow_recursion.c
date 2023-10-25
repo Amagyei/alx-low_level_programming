@@ -19,11 +19,14 @@ int _pow_recursion(int x, int y)
 		return (-1);
 	if (y >= 1)
 	{
+		int a = 1;
 		y--;
-		x = x * x;
-		return(_pow_recursion(x, y));
+		return(_pow_recursion(a, y));
+		a *= x;
 	}
-	return (x);
+	if ( y  == 0)
+		return 1;
+	return (a);
 }
 
 
