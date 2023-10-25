@@ -4,7 +4,7 @@
 
 
 /**
- * _pow_recursion - print in reverse
+ * factorial - print in reverse
  *
  * Description: ' Loopt through string and print revercse'
  *
@@ -15,14 +15,15 @@
 
 
 
-int _pow_recursion(int x, int y)
+int factorial(int n)
 {
 	if (n < 0)
 		return (-1);
-	if (y >= 0)
+	if (n == 1)
 	{
-		return (n * _pow_recursion(n));
+		return (n);
 	}
+	return (n * factorial(n - 1));
 }
 
 
