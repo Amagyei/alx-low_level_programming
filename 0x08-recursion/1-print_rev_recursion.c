@@ -4,7 +4,7 @@
 
 
 /**
- * _print_rev_recursion.c - print in reverse
+ * _print_rev_recursion - print in reverse
  *
  * Description: ' Loopt through string and print revercse'
  *
