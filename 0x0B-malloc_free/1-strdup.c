@@ -6,7 +6,7 @@ char *_strdup(char *str) {
     char *duplicate;
 
     if (str == NULL) {
-        return NULL;  .
+        return NULL;
     }
 
     duplicate = (char *)malloc(strlen(str) + 1);
