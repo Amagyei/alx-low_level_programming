@@ -3,7 +3,7 @@
 #include <string.h>
 
 char *_strdup(char *str) {
-    char *duplicate
+    char *duplicate;
 
     if (str == NULL) {
         return NULL;  .
