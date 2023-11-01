@@ -1,25 +1,18 @@
-#include <stdlib.h>
-#include <stdio.h>
-/*#include "main.h"*/
+#include "main.h"
 
 /**
- * _puts_recursion - prints characters of a string
- *
- * Description: 'Loops through the string to print each character'
- *
- * @s: pinter to string variable
- *
- * Return: voide
+ * _puts_recursion - prints a string, followed by a new line
+ * @str: the string to print
  */
 
-
-void _puts_recursion(char *s)
+void _puts_recursion(char *str)
 {
-	if (*s != '\0')
+	if (*str == '\0')
+
 	{
-		putchar(*s);
-		_puts_recursion(s + 1);
+		_putchar('\n');
+		return;
 	}
-	else
-		putchar('\n');
+	_putchar(*str);
+	_puts_recursion(str + 1);
 }

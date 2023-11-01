@@ -1,18 +1,21 @@
 #include "main.h"
-#include <string.h>
 
 /**
- *  _strcat - writes the character c to stdout
- * Description : 'check the code'
- * @dest: The character to print
- * @src: The character to print
+ * _strcat - Concatenates the string pointed to by @src,
+ * null byte, to the end of the string pointed to by @dest.
+ * @dest: A pointer to the string to be concatenated upon.
+ * @src: The source string to be appended to @dest.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: A pointer to the destination string @dest.
  */
-
 
 char *_strcat(char *dest, char *src)
 {
-return (strcat(dest, src));
+	int index = 0, dest_len = 0;
+
+	while (dest[index++])
+		dest_len++;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+	return (dest);
 }

@@ -1,17 +1,20 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strlen - check the code
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
  *
- * Description : 'check the code'
- *
- * @s: A parameter to check for lowercase
- * Return: Always 0.
+ * Return: the length of the string
  */
 
 int _strlen(char *s)
 {
-int a = strlen(s);
-return (a);
+	int i;
+
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

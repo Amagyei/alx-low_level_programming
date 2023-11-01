@@ -1,18 +1,24 @@
 #include "main.h"
-#include <string.h>
 
 /**
- *  _strcmp - writes the character c to stdout
- * @dest: The character to print
- * @src: The character to print
+ * _strcmp - compares two strings
+ * @s1: first string to compare
+ * @s2: second string to compare
  *
- * Description : 'check the code'
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: less than 0 if s1 is less than s2, 0 if they're equal,
+ * more than 0 if s1 is greater than s2
  */
 
-
-int _strcmp(char *dest, char *src)
+int _strcmp(char *s1, char *s2)
 {
-return (strcmp(dest, src));
+	while (*s1 == *s2)
+	{
+		if (*s1 == '\0')
+		{
+			return (0);
+		}
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
 }

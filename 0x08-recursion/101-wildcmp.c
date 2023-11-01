@@ -1,4 +1,5 @@
-`
+#include "main.h"
+
 /**
  * wildcmp - Compare strings
  * @s1: pointer to string parameters

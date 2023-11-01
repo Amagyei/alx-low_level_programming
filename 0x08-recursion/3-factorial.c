@@ -1,29 +1,17 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
+#include "main.h"
 
 /**
- * factorial - print in reverse
+ * factorial - A function to returns the factorial of a number
+ * @num: number to return the factorial from
  *
- * Description: ' Loopt through string and print revercse'
- *
- * @n: 'pointer to string to be printed'
- *
- * Return: void
+ * Return: factorial of n, 0 on success
  */
 
-
-
-int factorial(int n)
+int factorial(int num)
 {
-	if (n < 0)
+	if (num < 0)
 		return (-1);
-	if (n == 1)
-	{
-		return (n);
-	}
-	return (n * factorial(n - 1));
+	if (num == 0)
+		return (1);
+	return (num * factorial(num - 1));
 }
-
-
