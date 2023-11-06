@@ -1,18 +1,12 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
- * _isalpha - A program that checks for lowercase.
- * Description : 'Hopefully it all works'
- *
- * @c: A parameter to check for lowercase
- * Return: Always 0
+ * _isalpha - checks for alphabetic character
+ * @c: the character to be checked
+ * Return: 1 if c is a letter, 0 otherwise
  */
 
 int _isalpha(int c)
 {
-int a = isalpha(c);
-if (a != 0)
-a = 1;
-return (a);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }

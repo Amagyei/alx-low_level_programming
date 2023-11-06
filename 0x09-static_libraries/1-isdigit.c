@@ -1,14 +1,15 @@
 #include "main.h"
-#include <ctype.h>
-#include <stdio.h>
 
 /**
- * _isdigit - A program that checks for lowercase.
- * Description : 'printing whether random number is negative positive or zer'
- * @c: A parameter to check for lowercase
- * Return: Always 0
+ * _isdigit - a function that checks for a digit 0-9
+ * @c: input
+ * Return: 1 if c is a digit, 0 otherwise
  */
+
 int _isdigit(int c)
 {
-	return (c >= '0' && c <= '9');
+	if ((c >= 48) && (c <= 57))
+		return (1);
+	else
+		return (0);
 }

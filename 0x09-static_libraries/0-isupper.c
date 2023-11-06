@@ -1,22 +1,12 @@
 #include "main.h"
-#include <ctype.h>
-#include <stdio.h>
 
 /**
- * _isupper - A program that checks for lowercase.
- * Description : 'printing whether random number is negative positive or zer'
- * @c: A parameter to check for lowercase
- * Return: Always 0
+ * _isupper - program that checks for uppercase alpha
+ * @c: the character to be checked
+ * Return: 1 if c is uppercase, 0 otherwise
  */
 
 int _isupper(int c)
 {
-int a = isupper(c);
-if (a != 0)
-{
-a = 1;
-}
-else
-a = 0;
-return (a);
+	return (c >= 'A' && c <= 'Z');
 }

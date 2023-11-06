@@ -1,19 +1,28 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strncpy - writes the character c to stdout
- * Description : 'check the code'
- * @dest: The character to print
- * @src: The character to print
- * @n: The character to print
+ * _strncpy - copies a string
+ * @dest: destination string
+ * @src: source string
+ * @n: number of bytes to copy
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: pointer to the resulting string
  */
-
 
 char *_strncpy(char *dest, char *src, int n)
 {
-return (strncpy(dest, src, n));
+	int i;
+
+	i = 0;
+	while (src[i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
