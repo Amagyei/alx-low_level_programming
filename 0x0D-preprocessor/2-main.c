@@ -1,15 +1,12 @@
 #include <stdio.h>
 
 /**
- * void: 'Prints the name of the file it was printed frm'
- *
- * Description: Uses __FILE__  to achieve
- *
- * Return: 0
- */
-
-int main()
+* main - a program that prints the name of the file it was compiled from
+* Return: returns 0 (success)
+*/
+int main(void)
 {
-	printf(__FILE__);
+	printf("%s\n", __FILE__);
+
 	return (0);
 }
