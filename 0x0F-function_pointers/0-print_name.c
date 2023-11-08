@@ -1,8 +1,11 @@
 #include "function_pointers.h"
 #include <stdio.h>
 
-/** 
+/**
  * print_name - 'main function'
+ * @name: 'name variable'
+ *
+ * @f: 'pointer to the function'
  *
  * Description: 'Function tha tprints a name i think'
  *
