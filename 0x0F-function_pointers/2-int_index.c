@@ -1,31 +1,30 @@
 #include "function_pointers.h"
-#include <stdio.h>
 
 /**
- * int_index - 'main function'
- * @array: 'name variable'
- *
- * @cmp: 'pointer to the function'
- *
- * @size: 'size'
- *
- * Description: 'Function tha tprints a name i think'
- *
- * Return: void
- */
-
+  * int_index - ...
+  * @array: ...
+  * @size: ...
+  * @cmp: ...
+  *
+  * Return: ...
+  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	if(size <= 0)
-		return -1;
+	int i = 0;
 
-	if(array != NULL && size != NULL && cmp != NULL)
-		for(i = 0; i < size; i++)
+	if (size > 0)
+	{
+		if (array != NULL && cmp != NULL)
 		{
-			int a = cmp(array[i]);
-			if(a == 0)
-				return -1;
+			while (i < size)
+			{
+				if (cmp(array[i]))
+					return (i);
 
-			return a;
+				i++;
+			}
 		}
+	}
+
+	return (-1);
 }
