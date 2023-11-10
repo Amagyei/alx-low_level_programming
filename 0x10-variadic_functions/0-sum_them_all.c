@@ -13,16 +13,16 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int i, sum = 0;
+	unsigned int i, sum = 0;
 
-	va_list ptr; //ptr to the arguments
+	va_list ptr; /*ptr to the arguments*/
 
-	va_start(ptr, n); // initialising the argument to the list pointer
+	va_start(ptr, n); /* initialising the argument to the list pointer*/
 
 	for(i = 0; i < n; i++)
-		sum += va_arg(ptr, int);// traverse list and sum arguments
+		sum += va_arg(ptr, int);/* traverse list and sum arguments*/
 
-	va_end(ptr); // end list traversal
+	va_end(ptr); /* end list traversal*/
 
 	return sum;
 }
