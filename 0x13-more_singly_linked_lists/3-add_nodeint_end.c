@@ -9,7 +9,7 @@
  *
  * Description: uses code adn t
  *
- * Return: address of the new element or null 
+ * Return: address of the new element or null
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -19,20 +19,20 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	temp = malloc(sizeof(listint_t));
 
 	if (temp == NULL)
-		return NULL;
+		return (NULL);
 
 	temp->n = n;
 	temp->next = NULL;
 
-	if(*head == NULL)
+	if (*head == NULL)
 	{
 		*head = temp;
-		return temp;
+		return (temp);
 	}
 	ptr = *head;
 	while (ptr->next != NULL)
 	{
-		ptr = ptr->next; 
+		ptr = ptr->next;
 	}
 	ptr->next = temp;
 
