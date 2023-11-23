@@ -21,7 +21,7 @@ void free_listint2(listint_t **head)
 		*head = (*head)->next;
 		free(temp);
 	}
-	// Set the head to NULL after freeing the list
+	/* Set the head to NULL after freeing the list*/
 	*head = NULL;
 }
 
