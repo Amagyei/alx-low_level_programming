@@ -12,7 +12,7 @@
  * Return: data or NULL
  */
 
-listint_t *get_nodeint_at_index(listint_t *head)
+int sum_listint(listint_t *head)
 {
     int sum = 0;
 	listint_t *ptr = malloc(sizeof(listint_t));
