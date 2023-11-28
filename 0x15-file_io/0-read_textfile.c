@@ -3,6 +3,10 @@
 ssize_t read_textfile(const char *filename, size_t letters) {
     int fd = open(filename, O_RDONLY);
     char *buffer = malloc(letters);
+    ssize_t bytes_read = read(fd, buffer, letters);
+    size_t bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+
+
 
     if (filename == NULL) {
         return 0;
@@ -20,7 +24,6 @@ ssize_t read_textfile(const char *filename, size_t letters) {
         return 0;
     }
 
-    ssize_t bytes_read = read(fd, buffer, letters);
     if (bytes_read == -1) {
         perror("Error reading file");
         free(buffer);
@@ -28,7 +31,6 @@ ssize_t read_textfile(const char *filename, size_t letters) {
         return 0;
     }
 
-    ssize_t bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
     if (bytes_written == -1 || (size_t)bytes_written != bytes_read) {
         perror("Error writing to standard output");
         free(buffer);
