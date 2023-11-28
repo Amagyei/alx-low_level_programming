@@ -1,18 +1,19 @@
 #include "main.h"
 
 ssize_t read_textfile(const char *filename, size_t letters) {
+    int fd = open(filename, O_RDONLY);
+    char *buffer = malloc(letters);
+
     if (filename == NULL) {
         return 0;
     }
 
-    int fd = open(filename, O_RDONLY);
 
     if (fd == -1) {
         perror("Error opening file");
         return 0;
     }
 
-    char *buffer = malloc(letters);
     if (buffer == NULL) {
         perror("Error allocating buffer");
         close(fd);
