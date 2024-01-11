@@ -1,46 +1,48 @@
 #include "main.h"
 
-ssize_t read_textfile(const char *filename, size_t letters) {
-    int fd = open(filename, O_RDONLY);
-    char *buffer = malloc(letters);
-    ssize_t bytes_read = read(fd, buffer, letters);
-    size_t bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
+/**
+ * read_textfile - Reads a text file and prints it to the POSIX standard output.
+ * @filename: The name of the file.
+ * @letters: The number of letters to read and print.
+ *
+ * Return: The actual number of letters it could read and print.
+ *         0 if the file can not be opened or read.
+ *         0 if filename is NULL.
+ *         0 if write fails or does not write the expected amount of bytes.
+ */
+ssize_t read_textfile(const char *filename, size_t letters)
+{
+    int fd, read_result, write_result;
+    char *buffer;
 
+    if (filename == NULL)
+        return (0);
 
+    fd = open(filename, O_RDONLY);
+    if (fd == -1)
+        return (0);
 
-    if (filename == NULL) {
-        return 0;
-    }
+    buffer = malloc(letters);
+    if (buffer == NULL)
+        return (0);
 
-
-    if (fd == -1) {
-        perror("Error opening file");
-        return 0;
-    }
-
-    if (buffer == NULL) {
-        perror("Error allocating buffer");
-        close(fd);
-        return 0;
-    }
-
-    if (bytes_read == -1) {
-        perror("Error reading file");
+    read_result = read(fd, buffer, letters);
+    if (read_result == -1)
+    {
         free(buffer);
         close(fd);
-        return 0;
+        return (0);
     }
 
-    if (bytes_written == -1 || (size_t)bytes_written != bytes_read) {
-        perror("Error writing to standard output");
+    write_result = write(STDOUT_FILENO, buffer, read_result);
+    if (write_result == -1 || write_result != (ssize_t)read_result)
+    {
         free(buffer);
         close(fd);
-        return 0;
+        return (0);
     }
 
     free(buffer);
     close(fd);
-
-    return bytes_read;
+    return (read_result);
 }
-
